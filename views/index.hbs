@@ -1,0 +1,24 @@
+<h1>MONGODB - EXERCISE</h1>
+<section class="insert">
+    <h3>Insert Data</h3>
+    <form action="/insert" method="post" name="title">
+        
+
+        <button type="submit">INSERT</button>
+    </form>
+</section>
+<section class="get">
+    <h3>Get Data</h3>
+    <a href="/getdata">LOAD DATA</a>
+    <div>
+        {{# each items }}
+            <article class="item">
+                <div>Temp: {{ this.temp }}</div>
+                <div>City Name: {{ this.name }}</div>
+                <div>Wind Speed: {{ this.speed }}</div>
+                <div>ID: {{ this._id }}</div>
+            </article>
+        {{/each}}
+    </div>
+</section>
+
